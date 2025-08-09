@@ -1,3 +1,28 @@
-<div class="container">
-  <h1>Hello world...!!!</h1>
+<nav class="navbar bg-body-tertiary font-libre-franklin">
+  <div
+    class="container-fluid d-flex justify-content-center align-items-center gap-5"
+  >
+    <a class="navbar-brand font-libre-franklin me-5" href="#">{{
+      navbarBrand
+    }}</a>
+
+    <div class="d-flex gap-4">
+      <ng-container>
+        @for (tab of tabs; track tab.tabId) {
+        <a
+          ngbNavLink
+          class="nav-link"
+          [routerLink]="tab.route"
+          routerLinkActive="active"
+          >{{ tab.label }}</a
+        >
+        }
+      </ng-container>
+    </div>
+  </div>
+</nav>
+
+<!-- The routed views render in the <router-outlet> -->
+<div class="container mt-3">
+  <router-outlet></router-outlet>
 </div>
