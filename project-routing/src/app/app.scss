@@ -1,0 +1,32 @@
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  // Base underline style
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.2rem;
+    width: 100%;
+    background-color: #ff894f;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+
+  // Animate underline on hover
+  &:hover::after {
+    transform: scaleX(1);
+  }
+
+  // Keep underline for active tab
+  &.active::after {
+    transform: scaleX(1);
+  }
+}

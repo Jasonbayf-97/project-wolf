@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Font Classes
+.font-libre-franklin {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+// Navbar specific styles
+.navbar-brand {
+  &.font-libre-franklin {
+    font-weight: 500; // Bold weight for brand
+  }
+}
+
+.nav-link {
+  &.font-libre-franklin {
+    font-weight: 400; // Medium weight for nav items
+  }
+}

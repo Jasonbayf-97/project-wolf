@@ -1,11 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
+import { INavbar } from '../shared/interfaces/navbar.interface';
+import { navbarItems } from '../shared/models/navbar.model';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('project-routing');
+  navbarBrand: string = 'Jason Bayford';
+  tabs: INavbar[] = navbarItems;
 }
