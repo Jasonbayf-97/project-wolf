@@ -11,6 +11,13 @@ import { navbarItems } from '../shared/models/navbar.model';
   styleUrl: './app.scss',
 })
 export class App {
-  navbarBrand: string = 'Jason Bayford';
+  fullName: string = 'Jason Bayford';
+  jobTitle: string = 'Software Engineer';
+  profileImage: string = 'jasonbayford.png';
+  links: { label: string }[] = [
+    { label: 'Download CV' },
+    { label: 'Contact info' },
+  ];
+
   tabs: INavbar[] = navbarItems;
 }
