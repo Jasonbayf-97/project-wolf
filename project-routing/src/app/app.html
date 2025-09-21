@@ -1,8 +1,10 @@
-<nav class="navbar bg-body-tertiary font-libre-franklin">
+<nav class="navbar bg-body-tertiary font-libre-franklin sticky-top">
   <div
     class="container-fluid d-flex justify-content-center align-items-center gap-5"
   >
-    <a class="navbar-brand font-libre-franklin me-5">{{ fullName }}</a>
+    <a class="navbar-brand font-libre-franklin me-5" [routerLink]="'/'">{{
+      fullName
+    }}</a>
 
     <div class="d-flex gap-4">
       <ng-container>
