@@ -1,1 +1,46 @@
-<p>about works!</p>
+<div class="container-fluid p-5">
+  <div class="row align-items-center">
+    <div class="col-lg-12 col-md-12">
+      <h2 class="fw-bold mb-1">{{ aboutMe.title }}</h2>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3 d-flex">
+          <div class="card border rounded-5 text-center flex-fill h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-mortarboard"></i></h5>
+              <h5 class="card-title">Education</h5>
+              <p class="fw-lighter mb-0">{{ aboutMe.diploma }}</p>
+              <p class="fw-lighter mb-0">{{ aboutMe.degree }}</p>
+              <p class="fw-lighter mb-0">{{ aboutMe.honours }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 d-flex">
+          <div class="card border rounded-5 text-center flex-fill h-100">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-briefcase"></i></h5>
+              <h5 class="card-title">Experience</h5>
+              <p class="fw-lighter mb-0">{{ aboutMe.experience }}</p>
+              <p class="fw-lighter mb-0">{{ aboutMe.work }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fw-lighter lh-base">
+        <p>{{ aboutMe.paragraphOne }}</p>
+        <p>{{ aboutMe.paragraphTwo }}</p>
+        <p>{{ aboutMe.paragraphThree }}</p>
+        <p>{{ aboutMe.paragraphFour }}</p>
+      </div>
+    </div>
+    <!-- <div
+      class="col-md-5 d-flex justify-content-center align-items-center mb-md-0"
+    >
+      <img
+        [src]="profileImage"
+        alt="About Me Photo"
+        class="rounded img-fluid"
+        style="max-width: 22rem; object-fit: cover"
+      />
+    </div> -->
+  </div>
+</div>
