@@ -1,25 +1,7 @@
 export const EXPERIENCE = {
   title: 'Experience',
-  jobs: [
-    {
-      company: 'Xcontent',
-      year: 2023,
-      description:
-        'Worked at XContent as a frontend developer, contributing to projects for Redefine Properties.',
-    },
-    {
-      company: 'Investec',
-      year: '2024 - Present',
-      description:
-        'I am currently a frontend developer at Investec, where I build corporate cash management systems for intermediaries. Additionally, I am exploring pursuing an MBA to broaden my business knowledge and enhance my professional growth.',
-    },
-  ],
-  techStackTitle: 'Tech Stack',
-  techStack: [
-    {
-      name: 'Azure-900',
-      level: 'Certified',
-    },
+  frontEndTitle: 'Frontend development',
+  frontEnd: [
     {
       name: 'Angular',
       level: 'Intermediate',
@@ -41,20 +23,37 @@ export const EXPERIENCE = {
       level: 'Intermediate',
     },
     {
-      name: 'Material UI',
-      level: 'Intermediate',
-    },
-    {
       name: 'TypeScript',
       level: 'Basic',
     },
+  ],
+  backEndTitle: 'Backend development',
+  backEnd: [
+    {
+      name: 'Java',
+      level: 'Intermediate',
+    },
+    {
+      name: 'Azure-900',
+      level: 'Certified',
+    },
     {
       name: 'Springboot',
-      level: 'Beginner*',
+      level: 'Intermediate',
     },
     {
       name: '.NET',
-      level: 'Beginner*',
+      level: 'Learning*',
+    },
+    {
+      name: 'PostgreSQL',
+      level: 'Intermediate',
+    },
+    {
+      name: 'MongoDB',
+      level: 'Intermediate',
     },
   ],
+
+  techStackTitle: 'Tech Stack',
 };
