@@ -1,5 +1,5 @@
 export const ABOUT_ME = {
-  title: 'About Me',
+  title: 'About me',
   diploma: 'Diploma in Sport Management Science',
   degree: 'BSc Information Technology',
   honours: 'BSc (Hons) Software Engineering',

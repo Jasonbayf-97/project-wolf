@@ -1,6 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet, RouterLinkActive } from '@angular/router';
+import {
+  RouterLink,
+  RouterOutlet,
+  RouterLinkActive,
+  Router,
+} from '@angular/router';
 import { INavbar } from '../shared/interfaces/navbar.interface';
 import { navbarItems } from '../shared/models/navbar.model';
 
@@ -20,4 +25,6 @@ export class App {
   ];
 
   tabs: INavbar[] = navbarItems;
+
+  constructor(public router: Router) {}
 }
