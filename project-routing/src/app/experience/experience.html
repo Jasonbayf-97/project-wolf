@@ -1,1 +1,51 @@
-<p>experience works!</p>
+<div class="container-fluid p-5">
+  <div class="row align-items-center">
+    <div class="col-lg-12 col-md-12">
+      <div class="row mt-4">
+        <div class="col-md-6 mb-3 d-flex">
+          <div class="card border rounded-5 text-start flex-fill h-100">
+            <div class="card-body">
+              <h5 class="card-title mt-2">{{ experience.title }}</h5>
+              <hr />
+              <ul class="list-unstyled fw-lighter mb-0 text-start">
+                <li class="mb-2">
+                  <strong
+                    >{{ experience.jobs[0].company }} ({{
+                      experience.jobs[0].year
+                    }}):</strong
+                  >
+                  {{ experience.jobs[0].description }}
+                </li>
+                <li class="mb-2">
+                  <strong
+                    >{{ experience.jobs[1].company }} ({{
+                      experience.jobs[1].year
+                    }}):</strong
+                  >
+                  {{ experience.jobs[1].description }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 d-flex">
+          <div class="card border rounded-5 text-start flex-fill h-100">
+            <div class="card-body">
+              <h5 class="card-title mt-2">{{ experience.techStackTitle }}</h5>
+              <hr />
+              <div class="row text-start justify-content-center">
+                @for (tech of experience.techStack; track tech.name) {
+                <div class="col-6 mb-3">
+                  <i class="bi bi-check-circle-fill text-dark me-2"></i>
+                  <span class="fw-bold">{{ tech.name }}</span>
+                  <div class="small text-muted">{{ tech.level }}</div>
+                </div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
