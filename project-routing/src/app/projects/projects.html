@@ -5,76 +5,31 @@
       <h2 class="fw-bold mb-1 text-center">My recent projects</h2>
       <div class="row mt-4">
         <div class="col-md-4 mb-3 d-flex">
-          <div class="card border rounded-5 text-start flex-fill h-100">
-            <div class="card-body">
-              <h3 class="card-title">ToDo App</h3>
-              <p class="card-text">
-                A simple and intuitive ToDo Task App that helps users organize
-                their daily activities. Features include adding, editing, and
-                deleting tasks, marking tasks as complete, and filtering tasks
-                by status. Built with a clean user interface for efficient task
-                management.
-              </p>
-
-              <hr />
-              <div class="d-flex justify-content-center gap-3">
-                <button class="btn btn-outline-dark" href="#">
-                  {{ btnLabels.github }}
-                </button>
-                <button class="btn btn-dark" href="#">
-                  {{ btnLabels.liveDemo }}
-                </button>
-              </div>
-            </div>
-          </div>
+          <app-card
+            [Title]="'ToDo App'"
+            [Description]="
+              'A simple and intuitive ToDo Task App that helps users organize their daily activities. Features include adding, editing, and deleting tasks, marking tasks as complete, and filtering tasks by status. Built with a clean user interface for efficient task management.'
+            "
+            [buttonLabels]="{ github: 'Github', liveDemo: 'Live Demo' }"
+          ></app-card>
         </div>
         <div class="col-md-4 mb-3 d-flex">
-          <div class="card border rounded-5 text-start flex-fill h-100">
-            <div class="card-body">
-              <h3 class="card-title">Login App</h3>
-              <p class="card-text">
-                A full stack login application built with Java Spring Boot for
-                the backend and a modern frontend framework. It features secure
-                user authentication, registration, and session management. The
-                backend handles user data, password encryption, and JWT-based
-                authentication, while the frontend provides a responsive and
-                user-friendly login interface.
-              </p>
-
-              <hr />
-              <div class="d-flex justify-content-center gap-3">
-                <button class="btn btn-outline-dark" href="#">
-                  {{ btnLabels.github }}
-                </button>
-                <button class="btn btn-dark" href="#">
-                  {{ btnLabels.liveDemo }}
-                </button>
-              </div>
-            </div>
-          </div>
+          <app-card
+            [Title]="'Login App'"
+            [Description]="
+              'A full stack login application built with Java Spring Boot for the backend and a modern frontend framework. It features secure user authentication, registration, and session management. The backend handles user data, password encryption, and JWT-based authentication, while the frontend provides a responsive and user-friendly login interface.'
+            "
+            [buttonLabels]="{ github: 'Github', liveDemo: 'Live Demo' }"
+          ></app-card>
         </div>
         <div class="col-md-4 mb-3 d-flex">
-          <div class="card border rounded-5 text-start flex-fill h-100">
-            <div class="card-body">
-              <h3 class="card-title">E-Commerce App</h3>
-              <p class="card-text">
-                A responsive e-commerce website built with Angular and Node.js.
-                It features product listings, shopping cart functionality, and
-                user authentication. The backend is powered by Express and
-                MongoDB, providing a robust API for managing products and
-                orders.
-              </p>
-              <hr />
-              <div class="d-flex justify-content-center gap-3">
-                <button class="btn btn-outline-dark" href="#">
-                  {{ btnLabels.github }}
-                </button>
-                <button class="btn btn-dark" href="#">
-                  {{ btnLabels.liveDemo }}
-                </button>
-              </div>
-            </div>
-          </div>
+          <app-card
+            [Title]="'E-Commerce App'"
+            [Description]="
+              'A responsive e-commerce website built with Angular and Node.js. It features product listings, shopping cart functionality, and user authentication. The backend is powered by Express and MongoDB, providing a robust API for managing products and orders.'
+            "
+            [buttonLabels]="{ github: 'Github', liveDemo: 'Live Demo' }"
+          ></app-card>
         </div>
       </div>
     </div>
