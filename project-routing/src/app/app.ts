@@ -1,27 +1,16 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import {
-  RouterLink,
-  RouterOutlet,
-  RouterLinkActive,
-  Router,
-} from '@angular/router';
+import { Component, HostListener } from '@angular/core';
+import { RouterLink, Router } from '@angular/router';
 import { INavbar } from '../shared/interfaces/navbar.interface';
 import { navbarItems } from '../shared/models/navbar.model';
 import { About } from './about/about';
 import { Experience } from './experience/experience';
 import { Projects } from './projects/projects';
+import { Modal } from '../shared/components/modal/modal';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    CommonModule,
-    RouterLink,
-    RouterLinkActive,
-    About,
-    Experience,
-    Projects,
-  ],
+  imports: [CommonModule, RouterLink, About, Experience, Projects, Modal],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
