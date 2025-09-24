@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './card.scss',
 })
 export class Card {
+  @Input() status: boolean = false;
   @Input() Title: String = '';
   @Input() Description: String = '';
   @Input() buttonLabels = { github: '', liveDemo: '' };
