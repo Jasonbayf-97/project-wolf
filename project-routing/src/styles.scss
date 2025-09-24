@@ -16,4 +16,8 @@
   &.font-libre-franklin {
     font-weight: 400; // Medium weight for nav items
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }

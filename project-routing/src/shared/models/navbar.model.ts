@@ -1,30 +1,26 @@
 export const navbarItems = [
   {
     tabId: 1,
-    id: 'about',
-    label: 'About',
-    route: '/about',
+    id: 'landingPage',
+    label: 'Home',
     isActive: true,
   },
   {
     tabId: 2,
-    id: 'experience',
-    label: 'Experience',
-    route: '/experience',
+    id: 'about',
+    label: 'About',
     isActive: true,
   },
   {
     tabId: 3,
-    id: 'projects',
-    label: 'Projects',
-    route: '/projects',
+    id: 'experience',
+    label: 'Experience',
     isActive: true,
   },
   {
     tabId: 4,
-    id: 'contact',
-    label: 'Contact',
-    route: '/contact',
+    id: 'projects',
+    label: 'Projects',
     isActive: true,
   },
 ];
