@@ -8,10 +8,20 @@ import {
 } from '@angular/router';
 import { INavbar } from '../shared/interfaces/navbar.interface';
 import { navbarItems } from '../shared/models/navbar.model';
+import { About } from './about/about';
+import { Experience } from './experience/experience';
+import { Projects } from './projects/projects';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [
+    CommonModule,
+    RouterLink,
+    RouterLinkActive,
+    About,
+    Experience,
+    Projects,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

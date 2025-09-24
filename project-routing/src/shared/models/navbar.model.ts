@@ -20,11 +20,4 @@ export const navbarItems = [
     route: '/projects',
     isActive: true,
   },
-  {
-    tabId: 4,
-    id: 'contact',
-    label: 'Contact',
-    route: '/contact',
-    isActive: true,
-  },
 ];
