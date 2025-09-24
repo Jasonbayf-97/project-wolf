@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BtnLabels } from '../../shared/models/projects.modal';
+import { BtnLabels, PROJECTS } from '../../shared/models/projects.modal';
 import { Card } from '../../shared/components/card/card';
 
 @Component({
@@ -10,4 +10,5 @@ import { Card } from '../../shared/components/card/card';
 })
 export class Projects {
   btnLabels = BtnLabels;
+  projects = PROJECTS;
 }

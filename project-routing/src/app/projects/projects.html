@@ -4,33 +4,15 @@
       <h5 class="fw-lighter text-center text-muted">Explore my</h5>
       <h2 class="fw-bold mb-1 text-center">My recent projects</h2>
       <div class="row mt-4">
+        @for (project of projects; track project.title){
         <div class="col-md-4 mb-3 d-flex">
           <app-card
-            [Title]="'ToDo App'"
-            [Description]="
-              'A simple and intuitive ToDo Task App that helps users organize their daily activities. Features include adding, editing, and deleting tasks, marking tasks as complete, and filtering tasks by status. Built with a clean user interface for efficient task management.'
-            "
+            [Title]="project.title"
+            [Description]="project.description"
             [buttonLabels]="{ github: 'Github', liveDemo: 'Live Demo' }"
           ></app-card>
         </div>
-        <div class="col-md-4 mb-3 d-flex">
-          <app-card
-            [Title]="'Login App'"
-            [Description]="
-              'A full stack login application built with Java Spring Boot for the backend and a modern frontend framework. It features secure user authentication, registration, and session management. The backend handles user data, password encryption, and JWT-based authentication, while the frontend provides a responsive and user-friendly login interface.'
-            "
-            [buttonLabels]="{ github: 'Github', liveDemo: 'Live Demo' }"
-          ></app-card>
-        </div>
-        <div class="col-md-4 mb-3 d-flex">
-          <app-card
-            [Title]="'E-Commerce App'"
-            [Description]="
-              'A responsive e-commerce website built with Angular and Node.js. It features product listings, shopping cart functionality, and user authentication. The backend is powered by Express and MongoDB, providing a robust API for managing products and orders.'
-            "
-            [buttonLabels]="{ github: 'Github', liveDemo: 'Live Demo' }"
-          ></app-card>
-        </div>
+        }
       </div>
     </div>
   </div>
