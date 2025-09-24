@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { BtnLabels, PROJECTS } from '../../shared/models/projects.modal';
+import { Card } from '../../shared/components/card/card';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [Card],
   templateUrl: './projects.html',
-  styleUrl: './projects.scss'
+  styleUrl: './projects.scss',
 })
 export class Projects {
-
+  btnLabels = BtnLabels;
+  projects = PROJECTS;
 }

@@ -1,0 +1,25 @@
+<div class="card border rounded-5 text-start flex-fill h-100">
+  <div class="card-body">
+    @if(status){
+    <div class="text-start mb-3">
+      <span class="badge bg-success">Live</span>
+    </div>
+    } @else {
+    <div class="text-start mb-3">
+      <span class="badge bg-warning text-dark">Coming Soon</span>
+    </div>
+    }
+    <h3 class="card-title text-center mb-2">{{ Title }}</h3>
+    <p class="card-text">
+      {{ Description }}
+    </p>
+    <div class="d-flex justify-content-center gap-3">
+      <button class="btn btn-outline-dark" [disabled]="true" (click)="Github()">
+        {{ buttonLabels.github }}
+      </button>
+      <button class="btn btn-dark" [disabled]="true" (click)="LiveDemo()">
+        {{ buttonLabels.liveDemo }}
+      </button>
+    </div>
+  </div>
+</div>
